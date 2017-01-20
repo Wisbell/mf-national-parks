@@ -1,21 +1,34 @@
 console.log("app.js loaded")
 
-const app = angular.module('myAppName', ['ngRoute'])
+const app = angular.module('nationalParkApp', ['ngRoute'])
 
 app.config(function($routeProvider, $locationProvider){
     $locationProvider.hashPrefix('');
+
     $routeProvider
     .when('/', {
-        controller: 'MyMainController',
+        controller: 'MainCtrl',
         templateUrl: 'partials/main.html'
     })
-    .when('/list', {
-        controller: 'ListCtrl',
-        templateUrl: 'partials/list.html'
+    .when('/register', {
+        controller: 'RegisterCtrl',
+        templateUrl: 'partials/register.html'
     })
-    .when('/list/:someVariable', {
-        controller: 'DetailCtrl',
-        templateUrl: 'partials/detail.html'
+    .when('/login/', {
+        controller: 'LoginCtrl',
+        templateUrl: 'partials/login.html'
+    })
+    .when('/forests', {
+        controller: 'ForestListCtrl',
+        templateUrl: 'partials/forestList.html'
+    })
+    .when('/forests/favorite', {
+        controller: 'ForestFavoriteCtrl',
+        templateUrl: 'partials/forestFavorites.html'
+    })
+    .when('/forest/:id', {
+        controller: 'ForestIdentify',
+        templateUrl: 'partials/forest.html'
     })
     .otherwise({
         redirectTo: '/'

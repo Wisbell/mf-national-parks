@@ -24,13 +24,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Anguweather</title>
+  <title>National Parks App</title>
   <link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
 
+    <!-- Make a Nav -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">National Parks</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#/doctors">what i do here</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <div class="container">
-    <div ng-app="anguweather">
+    <div ng-app="nationalParkApp">
       <div ng-view></div>
     </div>
   </div>
