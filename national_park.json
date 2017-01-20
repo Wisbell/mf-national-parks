@@ -1,0 +1,32 @@
+{
+    "forests": {
+        "forest1": {
+            "name": "cool forest",
+            "description": "pretty cool forest"
+        },
+        "forest2": {
+            "name": "mega forest",
+            "description": "pretty megaa forest"
+        },
+        "forest3": {
+            "name": "woah its a forest",
+            "description": "wow woah its a forest"
+        }
+    },
+    "visitors": {
+        "cool_user_id": {
+            "first_name": "bob",
+            "last_name": "willington"
+        },
+        "mega_user_id": {
+            "first_name": "John",
+            "last_name": "stevenson"
+        }
+    },
+    "visitor_favorites": {
+        "crazy_firebase_unique_id": {
+            "forest": "unique id of forest",
+            "visitor": "unique id of visitor"
+        }
+    }
+}
